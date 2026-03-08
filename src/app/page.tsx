@@ -30,18 +30,27 @@ export default function Home() {
 
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-10 relative"
+          animate={{ opacity: 1, scale: 1, y: [0, -10, 0] }}
+          transition={{
+            duration: 1,
+            ease: [0.16, 1, 0.3, 1],
+            y: {
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
+          className="mb-10 relative group"
         >
-          <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full p-1 bg-gradient-to-tr from-slate-800 via-sky-500/50 to-slate-800 shadow-2xl shadow-sky-500/20">
-            <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 border-4 border-slate-900">
+          <div className="absolute -inset-4 bg-gradient-to-tr from-sky-500/20 to-indigo-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"></div>
+          <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full p-1 bg-gradient-to-tr from-slate-800 via-sky-500/50 to-slate-800 shadow-2xl shadow-sky-500/20 hover:shadow-sky-400/40 hover:scale-105 transition-all duration-500 ease-out z-10 cursor-pointer overflow-hidden">
+            <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 border-4 border-slate-900 relative">
               <Image
                 src="/profile.png"
                 alt="Eric Munive"
                 width={224}
                 height={224}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 priority
               />
             </div>
@@ -54,7 +63,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6"
         >
-          Eric Munive <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">García</span>
+          Eric <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">Munive García</span>
         </motion.h1>
 
         <motion.p
