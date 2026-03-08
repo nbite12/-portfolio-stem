@@ -93,6 +93,9 @@ export default function Home() {
           <a href="#proyectos" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg shadow-sky-500/30 transform hover:-translate-y-1">
             Ver Proyectos
           </a>
+          <a href="/blog" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg shadow-indigo-500/30 transform hover:-translate-y-1">
+            Blog Técnico
+          </a>
           <a href="https://linkedin.com/in/eric-munive-garcía-0119901a0" target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-sky-500/50 text-white font-semibold py-3.5 px-8 rounded-full transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-1">
             <FaLinkedin className="text-xl text-[#0a66c2]" /> LinkedIn
           </a>

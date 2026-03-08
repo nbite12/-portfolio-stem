@@ -11,3 +11,8 @@
 ○ Compiling / ...
  GET / 200 in 7.3s (compile: 6.7s, render: 555ms)
  GET / 200 in 119ms (compile: 8ms, render: 111ms)
+ GET / 200 in 1814ms (compile: 821ms, render: 994ms)
+○ Compiling /blog ...
+ GET /blog 200 in 9.9s (compile: 9.7s, render: 233ms)
+ GET /blog/gestor-autonomo 200 in 1484ms (compile: 1315ms, render: 169ms)
+ GET /blog/wheelcopy 200 in 1436ms (compile: 1358ms, render: 78ms)
