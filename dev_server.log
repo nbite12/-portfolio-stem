@@ -16,3 +16,5 @@
  GET /blog 200 in 9.9s (compile: 9.7s, render: 233ms)
  GET /blog/gestor-autonomo 200 in 1484ms (compile: 1315ms, render: 169ms)
  GET /blog/wheelcopy 200 in 1436ms (compile: 1358ms, render: 78ms)
+ GET / 200 in 3.6s (compile: 1999ms, render: 1601ms)
+ GET / 200 in 107ms (compile: 10ms, render: 97ms)
